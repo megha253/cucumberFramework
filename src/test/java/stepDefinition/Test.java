@@ -16,7 +16,7 @@ public class Test {
 		    System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		    driver = new ChromeDriver();
 		    driver.get("https://classic.crmpro.com/index.html");
-		    System.out.println("running");
+		    System.out.println("yoyo");
 		    throw new PendingException();
 		}
 
