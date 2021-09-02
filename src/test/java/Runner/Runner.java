@@ -7,13 +7,14 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "Features"
+		features = "C:\\Users\\megha\\eclipse-workspace\\bddFrame\\cucmberProject\\src\\test\\java\\Feature"
 		,glue={"stepDefinition"}
+		,dryRun = false
+		,monochrome = true
+		,format = {"pretty","html:target/Destination"}
 		
 		)
-public class Runner {
-	
-	
 
-	
+public class Runner {
+		
 }
