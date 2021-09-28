@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Test.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/megha/eclipse-workspace/bddFrame/cucmberProject/src/test/java/Feature/Deal.feature");
 formatter.feature({
   "line": 1,
-  "name": "LoginPage",
+  "name": "Fill the deal page form",
   "description": "",
-  "id": "loginpage",
+  "id": "fill-the-deal-page-form",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "To log into freeCRM application",
+  "name": "To fill the deal form",
   "description": "",
-  "id": "loginpage;to-log-into-freecrm-application",
+  "id": "fill-the-deal-page-form;to-fill-the-deal-form",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -22,44 +22,88 @@ formatter.step({
 formatter.step({
   "line": 5,
   "name": "enter the username and password in the field",
+  "rows": [
+    {
+      "cells": [
+        "megha253",
+        "Mg@9414"
+      ],
+      "line": 6
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "click on submit button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "check user is navigated on home page",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Test.navigate_on_the_page()"
+formatter.step({
+  "line": 9,
+  "name": "open deal form",
+  "keyword": "Then "
 });
+formatter.step({
+  "line": 10,
+  "name": "user enters in deal page",
+  "rows": [
+    {
+      "cells": [
+        "Sr. Manager",
+        "Amazon",
+        "9414806399",
+        "100"
+      ],
+      "line": 11
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "save the deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "close the browser",
+  "keyword": "Then "
+});
+formatter.match({});
 formatter.result({
-  "duration": 17058275000,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Test.enter_the_username_in_the_field()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 536411800,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Test.click_on_submit_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 7637396400,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "Test.check_user_is_navigated_on_home_page()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 114678200,
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });
